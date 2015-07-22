@@ -1,1 +1,6 @@
 <h1>Soups</h1>
+<ul>
+  <% @soup.each do |soup| %>
+  <li><%= link_to soup.name, soup %></li>
+  <% end %>
+</ul>
